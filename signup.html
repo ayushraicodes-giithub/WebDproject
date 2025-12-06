@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .head{
+        align-content: center;
+
+    }
+    .box{
+        background-color: aqua;
+        border: 20px;
+        border-radius: 6px;
+        border-color: black;
+        text-align: center;
+        margin-left: 20px;
+        margin-top: 230PX;
+        height: 250px;
+        width: 400px;
+        margin-left: 530px;
+        
+    }
+    .form input,
+    .form textarea{
+        padding: 2px;
+        margin-top: 3px;
+
+
+    }
+    button{
+        text-align: center;
+        background-color: brown;
+
+    }
+    
+    
+</style>
+<body>
+    <div class="box">
+        <div class="head">
+            <h2>SIGN UP</h2>
+        </div>
+        <div class="form">
+            <div style="margin-bottom: 20px;">
+            <input type="email" id="mail" placeholder="enter your email">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <input type="password" id="pass" placeholder="create your password">
+        </div>
+        <button onclick="signup()">SIGN UP</button>
+    </div>
+    </div>
+    <script>
+        function signup(){
+            var x = document.getElementById('mail').value;
+            var p = document.getElementById('pass').value;
+        
+        if(x === ""|| p === ""){
+            alert("please create an email or password")
+         } else{
+            window.location.href="loginpage.html";
+
+         }
+        }
+    </script>
+</body>
+</html>
