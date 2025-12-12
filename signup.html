@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: url(pngtree-website-technology-line-dark-background-image_2344719.jpg);
+    }
+    .head{
+        align-content: center;
+
+    }
+    .dibba{
+        background-color: rgb(104, 72, 100);
+        border: 20px;
+        border-radius: 6px;
+        border-color: black;
+        text-align: center;
+        margin-left: 20px;
+        margin-top: 230PX;
+        height: 250px;
+        width: 500px;
+        margin-left: 530px;
+        
+    }
+    .form input{
+        padding: 2px;
+        margin-top: 3px;
+        
+
+
+    }
+    button{
+        text-align: center;
+        background-color: brown;
+
+    }
+    
+    
+</style>
+<body>
+    <div class="dibba">
+        <div class="head">
+            <h2>SIGN UP</h2>
+        </div>
+        <div class="form">
+            <div style="margin-bottom: 20px;">
+            <input type="email" id="mail" placeholder="enter your details">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <input type="password" id="pass" placeholder="create your password">
+        </div>
+        <button onclick="signup()">SIGN UP</button>
+    </div>
+    </div>
+    <script>
+        function signup(){
+            var x = document.getElementById('mail').value;
+            var p = document.getElementById('pass').value;
+        
+        if(x === ""|| p === ""){
+            alert("please create a username or password")
+         } else{
+            window.location.href="loginpage.html";
+
+         }
+        }
+    </script>
+</body>
+</html>
